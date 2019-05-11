@@ -13,6 +13,7 @@ class Car extends MY_Controller {
     public function index()
     {
         $data["make"] = $this->car->get_makes();
+        $data["attribute"] = $this->car->get_attribute();
 
         $data["class"] = $this->car->get_class();
         $data["gear"] = $this->car->get_gear();
