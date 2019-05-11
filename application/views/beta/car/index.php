@@ -35,7 +35,7 @@
 <div class="box">
   <div class="box-inner">
     <div class="col-12 col-xl-12" style="height:100%;padding:0">
-      <div class="card" style="height:100%;border-radius:0;overflow: visible;">
+      <div class="card" style="height:100%;border-radius:0;overflow: overlay;">
         <div class="card-header">
           <h5 class="card-title">Araç Ekleme Formu</h5>
         </div>
