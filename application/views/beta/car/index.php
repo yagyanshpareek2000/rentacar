@@ -37,7 +37,7 @@
     <div class="col-12 col-xl-12" style="height:100%;padding:0">
       <div class="card" style="height:100%;border-radius:0">
         <div class="card-header">
-          <h5 class="card-title">Şöför Ekleme Formu</h5>
+          <h5 class="card-title">Araç Ekleme Formu</h5>
         </div>
         <div class="card-body">
           <form>
@@ -140,20 +140,16 @@
                       <?php } ?></div>
                </div>
             <div class="form-group">
-              <label class="form-label">Password</label>
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Textarea</label>
-              <textarea class="form-control" placeholder="Textarea" rows="1"></textarea>
-            </div>
-            <div class="form-group">
-              <label class="form-label w-100">File input</label>
-              <input type="file">
-              <small class="form-text text-muted">Example block-level help text here.</small>
+              <label class="form-label">Adet</label>
+              <input type="text" class="form-control" placeholder="Adet">
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+              <label class="form-label w-100">Resim</label>
+              <input type="file" name="file">
+             </div>
+
+            <button type="submit" class="btn btn-primary">Kaydet</button>
             <button type="button" class="btn btn-primary slide-left">Kapat</button>
           </form>
         </div>
