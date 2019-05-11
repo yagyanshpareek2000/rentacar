@@ -12,7 +12,8 @@ class Car extends MY_Controller {
   
     public function index()
     {
-        $this->template->load('beta/template', 'beta/car/index');
+        $data["make"] = $this->car->get_makes();
+        $this->template->load('beta/template', 'beta/car/index',$data);
     }
       public function ekstra()
     {
@@ -88,4 +89,12 @@ class Car extends MY_Controller {
          $this->car->deleteperiod($id);
          redirect("Backend/Car/period");
     }
+
+    public function get_model($id)
+    {
+        $data = $this->car->get_model($id);
+        echo json_encode($data);
+    }
+
+
 }

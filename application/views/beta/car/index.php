@@ -42,8 +42,21 @@
         <div class="card-body">
           <form>
             <div class="form-group">
-              <label class="form-label">Email address</label>
-              <input type="email" class="form-control" placeholder="Email">
+                <div class="col-6">
+                    <label class="form-label">Marka</label>
+                    <select name="make" class="form-control" id="make">
+                        <option value="0">Seçiniz</option>
+                        <?php foreach ($make as $val){ ?>
+                        <option value="<?=$val->markaid?>"><?=$val->markaname?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <div class="col-6" id="model" name="model" style="display: none">
+                    <label class="form-label">Model</label>
+                    <select>
+                        <option></option>
+                    </select>
+                 </div>
             </div>
             <div class="form-group">
               <label class="form-label">Password</label>
@@ -81,4 +94,29 @@
     });
     datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
   });
+</script>
+
+<script>
+    $("#make").change(function () {
+       var id = $ (this).val();
+       if(id == 0)
+       {
+           alert("Lütfen Seçim Yapınız");
+       }else{
+           $.ajax({
+               url: '<?=base_url()?>Backend/Car/get_model/'+id+'',
+               dataType: 'text',
+               type: 'post',
+               contentType: 'application/x-www-form-urlencoded',
+
+               success: function( data, textStatus, jQxhr ){
+                  console.log(data);
+               },
+               error: function( jqXhr, textStatus, errorThrown ){
+                   console.log( errorThrown );
+               }
+           });
+        }
+    });
+
 </script>

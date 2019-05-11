@@ -6,8 +6,15 @@ class Car_model extends CI_Model {
         {
             $this->db->insert($table, $data);
         }
-  
-  
+
+    public function get_makes()
+    {
+        return $this->db->get("marka")->result();
+    }
+    public function get_model($id)
+    {
+        return $this->db->where("modelid",$id)->get("model")->result();
+    }
      public function get_ekstra()
         {
             return $this->db->get("rentacarekstra")->result();
