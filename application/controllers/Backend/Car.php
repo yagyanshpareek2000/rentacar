@@ -13,12 +13,24 @@ class Car extends MY_Controller {
     public function index()
     {
         $data["make"] = $this->car->get_makes();
+
+        $data["class"] = $this->car->get_class();
+        $data["gear"] = $this->car->get_gear();
+        $data["fuel"] = $this->car->get_fuel();
+        $data["case"] = $this->car->get_case();
+        $data["category"] = $this->car->get_category();
         $this->template->load('beta/template', 'beta/car/index',$data);
     }
       public function ekstra()
     {
          $data["ekstra"] = $this->car->get_ekstra();
          $this->template->load('beta/template', 'beta/car/ekstra',$data);
+    }
+
+    public function category()
+    {
+        $data["category"] = $this->car->get_category();
+        $this->template->load('beta/template', 'beta/car/category',$data);
     }
         public function period()
     {
@@ -96,5 +108,18 @@ class Car extends MY_Controller {
         echo json_encode($data);
     }
 
+    public function categoryadd()
+    {
+        $arraypost = $this->_post_return();
+
+        $this->car->insert("rentacarcategory",$arraypost);
+        redirect("Backend/Car/category","refresh");
+    }
+
+    public function deletecategory($id)
+    {
+        $this->car->deletecategory($id);
+        redirect("Backend/Car/category");
+    }
 
 }

@@ -41,7 +41,17 @@
         </div>
         <div class="card-body">
           <form>
+              <div class="form-group">
+                  <label class="form-label">Kategori</label>
+                  <select name="category" class="form-control" id="category">
+                      <option value="0">Seçiniz</option>
+                      <?php foreach ($category as $val){ ?>
+                          <option value="<?=$val->id?>"><?=$val->name?></option>
+                      <?php } ?>
+                  </select>
+              </div>
             <div class="form-group">
+                <div class="row">
                 <div class="col-6">
                     <label class="form-label">Marka</label>
                     <select name="make" class="form-control" id="make">
@@ -51,13 +61,54 @@
                         <?php } ?>
                     </select>
                 </div>
-                <div class="col-6" id="model" name="model" style="display: none">
+                <div class="col-6" >
                     <label class="form-label">Model</label>
-                    <select>
-                        <option></option>
+                    <select id="model" class="form-control"  name="model" style="display: none">
+                        <option value="0" selected>Seçiniz</option>
                     </select>
                  </div>
+                </div>
             </div>
+              <div class="form-group">
+                  <div class="row">
+                      <div class="col-6">
+                          <label class="form-label">Yakıt</label>
+                          <select name="fuel" class="form-control" id="fuel">
+                              <?php foreach ($fuel as $val){ ?>
+                                  <option value="<?=$val->id?>"><?=$val->fuel?></option>
+                              <?php } ?>
+                           </select>
+                      </div>
+                      <div class="col-6" >
+                          <label class="form-label">Vites</label>
+                          <select id="gear" class="form-control"  name="gear">
+                              <?php foreach ($gear as $val){ ?>
+                                  <option value="<?=$val->id?>"><?=$val->gear?></option>
+                              <?php } ?>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="row">
+                      <div class="col-6">
+                          <label class="form-label">Kasa</label>
+                          <select name="case" class="form-control" id="case">
+                              <?php foreach ($case as $val){ ?>
+                                  <option value="<?=$val->id?>"><?=$val->case?></option>
+                              <?php } ?>
+                          </select>
+                      </div>
+                      <div class="col-6" >
+                          <label class="form-label">Sınıf</label>
+                          <select id="class" class="form-control"  name="class">
+                              <?php foreach ($class as $val){ ?>
+                                  <option value="<?=$val->id?>"><?=$val->class?></option>
+                              <?php } ?>
+                           </select>
+                      </div>
+                  </div>
+              </div>
             <div class="form-group">
               <label class="form-label">Password</label>
               <input type="password" class="form-control" placeholder="Password">
@@ -103,6 +154,7 @@
        {
            alert("Lütfen Seçim Yapınız");
        }else{
+           $("select#model").html("");
            $.ajax({
                url: '<?=base_url()?>Backend/Car/get_model/'+id+'',
                dataType: 'text',
@@ -110,11 +162,13 @@
                contentType: 'application/x-www-form-urlencoded',
 
                success: function( data, textStatus, jQxhr ){
-                  console.log(data);
-               },
-               error: function( jqXhr, textStatus, errorThrown ){
-                   console.log( errorThrown );
+                   $("select#model").show();
+
+                    $.each(JSON.parse(data), function(i, item) {
+                        $("select#model").append('<option value=' + item.modelid + '>' + item.modelname + '</option>');
+                    });
                }
+
            });
         }
     });
