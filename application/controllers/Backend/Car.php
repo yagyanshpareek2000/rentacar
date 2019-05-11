@@ -59,13 +59,13 @@ class Car extends MY_Controller {
         $array = array_merge($arraypost,$arrayimages);
         $this->car->insert("rentacarcar",$array);
         $lastid = $this->db->insert_id();
-
-        $attribute = $this->_post_return("attribute");
-        foreach ($attribute as $val)
-        {
-            $data = array("id_rentacarcar" => $lastid , "id_attribute",$val);
-            $this->car->add_car_attribute($data);
-        }
+//
+//        $attribute = $this->_post_return("attribute");
+//        foreach ($attribute as $val)
+//        {
+//            $data = array("id_rentacarcar" => $lastid , "id_attribute",$val);
+//            $this->car->add_car_attribute($data);
+//        }
 
         redirect("Backend/Car/index","refresh");
     }

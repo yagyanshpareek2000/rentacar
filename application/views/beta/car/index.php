@@ -129,16 +129,16 @@
                       </div>
                   </div>
               </div>
-              <div class="form-group">
-                  <label class="form-label">Özellikler</label>
-                  <div class="row">
-                        <?php foreach ($attribute as $val){ ?>
-                          <label class="custom-control custom-checkbox m-0 col-4">
-                              <input type="checkbox" class="custom-control-input"  name="attribute[]" value="<?=$val->id?>">
-                              <span class="custom-control-label"><?=$val->name?></span>
-                          </label>
-                      <?php } ?></div>
-               </div>
+<!--              <div class="form-group">-->
+<!--                  <label class="form-label">Özellikler</label>-->
+<!--                  <div class="row">-->
+<!--                        --><?php //foreach ($attribute as $val){ ?>
+<!--                          <label class="custom-control custom-checkbox m-0 col-4">-->
+<!--                              <input type="checkbox" class="custom-control-input"  name="attribute[]" value="--><?//=$val->id?><!--">-->
+<!--                              <span class="custom-control-label">--><?//=$val->name?><!--</span>-->
+<!--                          </label>-->
+<!--                      --><?php //} ?><!--</div>-->
+<!--               </div>-->
             <div class="form-group">
               <label class="form-label">Adet</label>
               <input type="text" class="form-control" placeholder="Adet">

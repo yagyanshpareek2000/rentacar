@@ -4,6 +4,7 @@
     <list default="true" id="513bf176-a94b-414a-8792-971d56acf43d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Backend/Car.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Backend/Car.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/beta/car/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/beta/car/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Backend/Car.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+            <state relative-caret-position="179">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="68" />
               <folding>
                 <element signature="n#index#0;n#Car#0;n#!!top" />
                 <element signature="n#ekstra#0;n#Car#0;n#!!top" />
@@ -59,15 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Car_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-918" />
+            <state relative-caret-position="264">
+              <caret line="73" column="40" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="40" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/beta/car/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="152" column="68" selection-start-line="152" selection-start-column="68" selection-end-line="152" selection-end-column="68" />
+            <state relative-caret-position="43">
+              <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="140" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -98,8 +101,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/beta/car/index.php" />
+        <option value="$PROJECT_DIR$/application/models/Car_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/Backend/Car.php" />
+        <option value="$PROJECT_DIR$/application/views/beta/car/index.php" />
       </list>
     </option>
   </component>
@@ -214,7 +218,7 @@
       <workItem from="1557600824343" duration="256000" />
       <workItem from="1557601130855" duration="366000" />
       <workItem from="1557601516223" duration="714000" />
-      <workItem from="1557602250454" duration="3452000" />
+      <workItem from="1557602250454" duration="4150000" />
     </task>
     <task id="LOCAL-00001" summary="araç ekleme formuna özellikler eklendi">
       <created>1557603519466</created>
@@ -293,11 +297,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557605597769</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="insert test ediliyor">
+      <created>1557605797761</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1557605797761</updated>
+    </task>
+    <task id="LOCAL-00013" summary="insert r araç özellikleri eklendi">
+      <created>1557606382297</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1557606382297</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4788000" />
+    <option name="totallyTimeSpent" value="5486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -339,14 +357,11 @@
     <MESSAGE value="add" />
     <MESSAGE value="driverlicanceage eklendi" />
     <MESSAGE value="acıklama alanı eklendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="acıklama alanı eklendi" />
+    <MESSAGE value="insert test ediliyor" />
+    <MESSAGE value="insert r araç özellikleri eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert r araç özellikleri eklendi" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/Car_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/forms-layouts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -361,20 +376,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/beta/car/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="152" column="68" selection-start-line="152" selection-start-column="68" selection-end-line="152" selection-end-column="68" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Backend/Car.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        <state relative-caret-position="179">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="68" />
           <folding>
             <element signature="n#index#0;n#Car#0;n#!!top" />
             <element signature="n#ekstra#0;n#Car#0;n#!!top" />
@@ -391,6 +396,23 @@
             <element signature="n#get_model#0;n#Car#0;n#!!top" />
             <element signature="n#categoryadd#0;n#Car#0;n#!!top" />
             <element signature="n#deletecategory#0;n#Car#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Car_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/beta/car/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="140" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
