@@ -40,27 +40,16 @@ class Slider extends MY_Controller {
         redirect("Backend/Site");
     }
 
-    public function insert()
+    public function add()
     {
-        $site = $this->db->where("id",1)->get("site")->result();
-        $arraypost = $this->_post_return();
-        /* Logo */
-        if ($_FILES['logo']["name"]  != ""){
-            $logo = upload_files("images/site/","test ediyoruz",'logo');
-        } else {
-            $logo =  $site[0]->logo;
+         $arraypost = $this->_post_return();
+         if ($_FILES['file']["name"]  != ""){
+            $file = upload_files("images/slider/",$this->_post_return("name"),'file');
         }
-        /* End Logo */
-        /* Favicon */
-        if ($_FILES['favicon']["name"] != ""){
-            $favicon = upload_files("images/site/","test ediyoruz",'favicon');
-        } else {
-            $favicon = $site[0]->favicon;
-        }
-        /* End Favicon */
-        $arrayimages = array('logo' => $logo,'favicon' => $favicon,'description' => $this->_post_return("description"));
+
+        $arrayimages = array('file' => $file);
         $array = array_merge($arraypost,$arrayimages);
-        $this->site->insert("site",$array,1);
+        $this->site->insert("slider",$array,1);
         redirect("Backend/Site");
     }
 }

@@ -182,6 +182,7 @@
                         <li class="sidebar-item"><a class="sidebar-link" href="<?= base_url() ?>Backend/Site">Site
                                 Ayarları</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="#">Dashboard Ayarları</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="<?= base_url() ?>Backend/Slider">Slider Ayarları</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="#">Dil Ayarları</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="#">Sms Ayarları</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="#">Email Ayarları</a></li>
