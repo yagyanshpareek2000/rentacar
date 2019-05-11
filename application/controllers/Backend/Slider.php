@@ -50,7 +50,7 @@ class Slider extends MY_Controller {
 
         $arrayimages = array('file' => $file);
         $array = array_merge($arraypost,$arrayimages);
-        $this->site->insert("slider",$array,1);
+        $this->slider->insert("slider",$array,1);
         redirect("Backend/Site");
     }
 }
