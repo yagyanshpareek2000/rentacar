@@ -49,9 +49,8 @@ class Car extends MY_Controller {
     public function add()
     {
         $arraypost = $this->_post_return();
-        print_r($arraypost);
-        die();
-        if ($_FILES['icon']["name"]  != ""){
+
+        if ($_FILES['file']["name"]  != ""){
             $file = upload_files("images/car/","Araç Resmi",'file');
         } else {
             //$logo =  $site[0]->icon;
