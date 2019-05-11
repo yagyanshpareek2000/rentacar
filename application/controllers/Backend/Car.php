@@ -22,32 +22,45 @@ class Car extends MY_Controller {
         $data["category"] = $this->car->get_category();
         $this->template->load('beta/template', 'beta/car/index',$data);
     }
-      public function ekstra()
+    public function ekstra()
     {
          $data["ekstra"] = $this->car->get_ekstra();
          $this->template->load('beta/template', 'beta/car/ekstra',$data);
     }
-
     public function category()
     {
         $data["category"] = $this->car->get_category();
         $this->template->load('beta/template', 'beta/car/category',$data);
     }
-        public function period()
+    public function period()
     {
          $data["period"] = $this->car->get_period();
          $this->template->load('beta/template', 'beta/car/period',$data);
     }
-     public function driver()
+    public function driver()
     {
         $this->template->load('beta/template', 'beta/car/driver');
     }
-       public function attribute()
+    public function attribute()
     {
         $data["attribute"] = $this->car->get_attribute();
         $this->template->load('beta/template', 'beta/car/attribute',$data);
     }
-  
+    public function add()
+    {
+        $arraypost = $this->_post_return();
+        print_r($arraypost);
+        die();
+        if ($_FILES['icon']["name"]  != ""){
+            $file = upload_files("images/car/","Araç Resmi",'file');
+        } else {
+            //$logo =  $site[0]->icon;
+        }
+        $arrayimages = array('file' => $file);
+        $array = array_merge($arraypost,$arrayimages);
+        $this->car->insert("rentacarcar",$array);
+        redirect("Backend/Car/index","refresh");
+    }
     public function attributeadd()
     {
       $arraypost = $this->_post_return();
@@ -61,14 +74,12 @@ class Car extends MY_Controller {
       $this->car->insert("rentacarattribute",$array);
       redirect("Backend/Car/attribute","refresh");
     }
-  
-         public function deleteattribute($id)
+    public function deleteattribute($id)
     {
         $data["attribute"] = $this->car->deleteattribute($id);
          redirect("Backend/Car/attribute");
     }
-  
-   public function ekstraadd()
+    public function ekstraadd()
     {
       $arraypost = $this->_post_return();
          if ($_FILES['icon']["name"]  != ""){
@@ -81,34 +92,28 @@ class Car extends MY_Controller {
       $this->car->insert("rentacarekstra",$array);
       redirect("Backend/Car/ekstra","refresh");
     }
-  
-         public function deleteekstra($id)
+    public function deleteekstra($id)
     {
         $this->car->deleteekstra($id);
          redirect("Backend/Car/ekstra");
     }
-  
-  
-     public function periodadd()
+    public function periodadd()
     {
       $arraypost = $this->_post_return();
           
       $this->car->insert("rentacarperiod",$arraypost);
       redirect("Backend/Car/period","refresh");
     }
-  
-         public function deleteperiod($id)
+    public function deleteperiod($id)
     {
          $this->car->deleteperiod($id);
          redirect("Backend/Car/period");
     }
-
     public function get_model($id)
     {
         $data = $this->car->get_model($id);
         echo json_encode($data);
     }
-
     public function categoryadd()
     {
         $arraypost = $this->_post_return();
@@ -116,7 +121,6 @@ class Car extends MY_Controller {
         $this->car->insert("rentacarcategory",$arraypost);
         redirect("Backend/Car/category","refresh");
     }
-
     public function deletecategory($id)
     {
         $this->car->deletecategory($id);

@@ -40,8 +40,8 @@
           <h5 class="card-title">Araç Ekleme Formu</h5>
         </div>
         <div class="card-body">
-          <form>
-              <div class="form-group">
+            <form method="post" action="<?=base_url()?>Backend/Car/caradd" enctype='multipart/form-data'>
+            <div class="form-group">
                   <label class="form-label">Kategori</label>
                   <select name="category" class="form-control" id="category">
                       <option value="0">Seçiniz</option>
