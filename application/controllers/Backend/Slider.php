@@ -13,6 +13,7 @@ class Slider extends MY_Controller {
     public function index()
     {
         $data = array();
+        $data["slider"] = $this->slider->get();
         $this->template->load('beta/template', 'beta/slider/index',$data);
     }
 
