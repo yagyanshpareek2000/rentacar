@@ -21,24 +21,13 @@ class Slider extends MY_Controller {
     {
         $site = $this->db->where("id",1)->get("site")->result();
         $arraypost = $this->_post_return();
-        /* Logo */
-        if ($_FILES['logo']["name"]  != ""){
-            $logo = upload_files("images/site/","test ediyoruz",'logo');
-        } else {
-            $logo =  $site[0]->logo;
+        if ($_FILES['file']["name"]  != ""){
+            $file = upload_files("images/slider/","test ediyoruz",'logo');
         }
-        /* End Logo */
-        /* Favicon */
-        if ($_FILES['favicon']["name"] != ""){
-            $favicon = upload_files("images/site/","test ediyoruz",'favicon');
-        } else {
-            $favicon = $site[0]->favicon;
-        }
-        /* End Favicon */
-        $arrayimages = array('logo' => $logo,'favicon' => $favicon,'description' => $this->_post_return("description"));
+         $arrayimages = array('file' => $file);
         $array = array_merge($arraypost,$arrayimages);
-        $this->site->update("site",$array,1);
-        redirect("Backend/Site");
+        $this->slider->update("slider",$array,1);
+        redirect("Backend/Slider");
     }
 
     public function add()
@@ -51,6 +40,6 @@ class Slider extends MY_Controller {
         $arrayimages = array('file' => $file);
         $array = array_merge($arraypost,$arrayimages);
         $this->slider->insert("slider",$array,1);
-        redirect("Backend/Site");
+        redirect("Backend/Slider");
     }
 }
