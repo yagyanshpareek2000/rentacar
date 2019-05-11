@@ -69,4 +69,9 @@ class Car_model extends CI_Model {
         {
               $this->db->where("id",$id)->delete("rentacarattribute");
         }
+    public function add_car_attribute($data)
+    {
+        $this->db->insert("car_attribute",$data);
+    }
+
 }

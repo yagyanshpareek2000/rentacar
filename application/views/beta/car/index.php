@@ -134,7 +134,7 @@
                   <div class="row">
                         <?php foreach ($attribute as $val){ ?>
                           <label class="custom-control custom-checkbox m-0 col-4">
-                              <input type="checkbox" class="custom-control-input" value="<?=$val->id?>">
+                              <input type="checkbox" class="custom-control-input"  name="attribute[]" value="<?=$val->id?>">
                               <span class="custom-control-label"><?=$val->name?></span>
                           </label>
                       <?php } ?></div>

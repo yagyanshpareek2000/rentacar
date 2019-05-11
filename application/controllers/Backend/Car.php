@@ -51,13 +51,22 @@ class Car extends MY_Controller {
         $arraypost = $this->_post_return();
 
         if ($_FILES['file']["name"]  != ""){
-            $file = upload_files("images/car/","Araç Resmi",'file');
+            $file = upload_files("images/car/","Arac Resmi",'file');
         } else {
             //$logo =  $site[0]->icon;
         }
         $arrayimages = array('file' => $file);
         $array = array_merge($arraypost,$arrayimages);
         $this->car->insert("rentacarcar",$array);
+        $lastid = $this->db->insert_id();
+
+        $attribute = $this->_post_return("attribute");
+        foreach ($attribute as $val)
+        {
+            $data = array("id_rentacarcar" => $lastid , "id_attribute",$val);
+            $this->car->add_car_attribute($data);
+        }
+
         redirect("Backend/Car/index","refresh");
     }
     public function attributeadd()
