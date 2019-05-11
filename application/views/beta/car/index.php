@@ -148,7 +148,10 @@
               <label class="form-label w-100">Resim</label>
               <input type="file" name="file">
              </div>
-
+                <div class="form-group">
+                    <label class="form-label">Açıklama</label>
+                    <textarea class="form-control" name="description"></textarea>
+                </div>
             <button type="submit" class="btn btn-primary">Kaydet</button>
             <button type="button" class="btn btn-primary slide-left">Kapat</button>
           </form>
