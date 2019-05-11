@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="513bf176-a94b-414a-8792-971d56acf43d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/beta/car/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/beta/car/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,10 @@
         <entry file="file://$PROJECT_DIR$/application/views/beta/car/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="37" column="76" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
+              <caret line="115" column="56" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,7 +214,7 @@
       <workItem from="1557600824343" duration="256000" />
       <workItem from="1557601130855" duration="366000" />
       <workItem from="1557601516223" duration="714000" />
-      <workItem from="1557602250454" duration="2875000" />
+      <workItem from="1557602250454" duration="3112000" />
     </task>
     <task id="LOCAL-00001" summary="araç ekleme formuna özellikler eklendi">
       <created>1557603519466</created>
@@ -261,11 +265,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557605148167</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="scroll eklendi">
+      <created>1557605206548</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557605206548</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add">
+      <created>1557605302699</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557605302699</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4211000" />
+    <option name="totallyTimeSpent" value="4448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -304,7 +322,8 @@
     <MESSAGE value="Araç Ekleme Formu tamamlandı" />
     <MESSAGE value="dadada" />
     <MESSAGE value="scroll eklendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="scroll eklendi" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/models/Car_model.php">
@@ -353,7 +372,10 @@
     <entry file="file://$PROJECT_DIR$/application/views/beta/car/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="37" column="76" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
+          <caret line="115" column="56" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

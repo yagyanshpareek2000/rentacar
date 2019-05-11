@@ -112,15 +112,15 @@
               <div class="form-group">
                   <div class="row">
                       <div class="col-6">
-                          <label class="form-label">Sürücü Yaşı</label>
-                          <select name="age" class="form-control" id="age">
+                          <label class="form-label">Ehliyet yılı</label>
+                          <select name="driverlicanceage" class="form-control" id="driverlicanceage">
                                <?php for($i=1; $i < 10; $i++){ ?>
                                   <option value="<?=$i?>"><?=$i?></option>
                               <?php } ?>
                           </select>
                       </div>
                       <div class="col-6" >
-                          <label class="form-label">Ehliyet yılı</label>
+                          <label class="form-label">Sürücü Yaşı</label>
                           <select name="age" class="form-control" id="age">
                                <?php for($i=20; $i < 31; $i++){ ?>
                                   <option value="<?=$i?>"><?=$i?></option>
