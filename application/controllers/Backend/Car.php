@@ -14,7 +14,7 @@ class Car extends MY_Controller {
     {
         $data["make"] = $this->car->get_makes();
         $data["attribute"] = $this->car->get_attribute();
-
+        $data["car"] = $this->car->get_car();
         $data["class"] = $this->car->get_class();
         $data["gear"] = $this->car->get_gear();
         $data["fuel"] = $this->car->get_fuel();
