@@ -18,7 +18,7 @@
                 <?php foreach($slider as $val){ ?>
                     <tr>
                         <td><?=$val->name?></td>
-                        <td><img src="<?=base_url()?>images/icon/<?=$val->file?>" /> </td>
+                        <td><img src="<?=base_url()?>images/slider/<?=$val->file?>" /> </td>
                         <td><a class="btn btn-sm btn-danger" href="<?=base_url()?>Backend/Slider/deleteslider/<?=$val->id?>" onclick="return confirm('Silmek istediğinizden eminmisiniz?');"><i class="ion ion-ios-trash"></i></a> </td>
                     </tr>
                 <?php } ?>
