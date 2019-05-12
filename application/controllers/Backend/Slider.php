@@ -42,4 +42,10 @@ class Slider extends MY_Controller {
         $this->slider->insert("slider",$array,1);
         redirect("Backend/Slider");
     }
+
+    public function deleteslider($id)
+    {
+        $this->slider->deleteslider($id);
+        redirect("Backend/Slider");
+    }
 }

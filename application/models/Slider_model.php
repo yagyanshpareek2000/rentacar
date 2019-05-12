@@ -11,4 +11,10 @@ class Slider_model extends CI_Model {
     {
         $this->db->insert($table, $data);
     }
+
+    public function deleteslider($id)
+    {
+        $this->db->where("id",$id)->delete("slider");
+    }
+
 }
