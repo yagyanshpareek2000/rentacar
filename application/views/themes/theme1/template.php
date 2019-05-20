@@ -36,7 +36,7 @@
       <link rel="stylesheet" type="text/css" href="<?=base_url()?>template/theme2/css/owl.carousel.css">
       <link rel="stylesheet" type="text/css" href="<?=base_url()?>template/theme2/css/owl.theme.css">
       <!-- =-=-=-=-=-=-= Check boxes =-=-=-=-=-=-= -->
-      <link href="skins/minimal/minimal.css" rel="stylesheet">
+      <link href="<?=base_url()?>template/theme2/skins/minimal/minimal.css" rel="stylesheet">
       <!-- =-=-=-=-=-=-= PrettyPhoto =-=-=-=-=-=-= -->
       <link rel="stylesheet" href="<?=base_url()?>template/theme2/css/jquery.fancybox.min.css" type="text/css" media="screen"/>
       <!-- =-=-=-=-=-=-= Responsive Media =-=-=-=-=-=-= -->

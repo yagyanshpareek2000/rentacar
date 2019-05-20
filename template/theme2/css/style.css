@@ -1082,7 +1082,7 @@ img.resize {
 
 /* =-=-=-=-=-=-= Home With Static Banner =-=-=-=-=-=-= */
 #banner {
-	background: url("../images/banner-5.jpg");
+	background: url("../images/hero_image.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

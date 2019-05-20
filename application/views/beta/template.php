@@ -611,24 +611,6 @@
         });
     })
 </script>
-<script>
-    $(function () {
-        $('#datatables-dashboard').DataTable({
-            pageLength: 6,
-            lengthChange: false,
-            bFilter: false,
-            autoWidth: false
-        });
-    });
-</script>
-<script>
-    $(function () {
-        $('#datetimepicker-dashboard').datetimepicker({
-            inline: true,
-            sideBySide: false,
-            format: 'L'
-        });
-    });
-</script>
+
 </body>
 </html>

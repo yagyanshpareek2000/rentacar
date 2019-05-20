@@ -4,10 +4,8 @@
          <div class="container">
             <div class="search-container">
                <!-- Form -->
-               <h2>What are you looking for ?</h2>
-               <p>Search <strong>267,241</strong> new ads -<strong> 83 </strong> added today</p>
-               <a class="btn btn-theme">Post Your Ad</a>
-            </div>
+                <p><img src="<?=base_url()?>template/theme2/images/tr_slogan.png"></p>
+             </div>
          </div>
       </div>
       <!-- =-=-=-=-=-=-= Home Banner End =-=-=-=-=-=-= -->
@@ -20,10 +18,10 @@
                      <!-- Nav tabs -->
                      <ul class="nav nav-tabs">
                         <li class="nav-item active">
-                           <a class="nav-link" data-toggle="tab" href="#tab1">Search Car In Details </a>
+                           <a class="nav-link" data-toggle="tab" href="#tab1">Araç Ara </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" data-toggle="tab" href="#tab2" >Search Car By Type</a>
+                           <a class="nav-link" data-toggle="tab" href="#tab2" >Rezervasyon Ara</a>
                         </li>
                      </ul>
                      <!-- Tab panes -->
@@ -32,15 +30,9 @@
                            <form>
                               <div class="search-form pull-left">
                                  <div class="search-form-inner pull-left">
-                                    <div class="col-md-3 no-padding">
+                                     <div class="col-md-4 no-padding">
                                        <div class="form-group">
-                                          <label>Keyword</label>
-                                          <input type="text" class="form-control" placeholder="Eg Honda Civic , Audi , Ford." />
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3 no-padding">
-                                       <div class="form-group">
-                                          <label>Select Make</label>
+                                          <label>Alış Ofisi</label>
                                           <select class=" form-control make">
                                              <option label="Any Make"></option>
                                              <option>BMW</option>
@@ -51,45 +43,143 @@
                                           </select>
                                        </div>
                                     </div>
-                                    <div class="col-md-3 no-padding">
+                                    <div class="col-md-2 no-padding">
                                        <div class="form-group">
-                                          <label>Select Year</label>
-                                          <select class=" form-control search-year">
-                                             <option label="Any Year"></option>
-                                             <option>Year</option>
-                                             <option>2010</option>
-                                             <option>2011</option>
-                                             <option>2012</option>
-                                             <option>2013</option>
-                                             <option>2014</option>
-                                             <option>2015</option>
-                                             <option>2016</option>
-                                          </select>
-                                       </div>
+                                          <label>Alış Tarihi</label>
+                                         <input type="date" class="form-control search-year" style="    line-height: 20px;    padding: 14px 12px;">
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 no-padding">
+                                        <div class="col-md-2 no-padding">
                                        <div class="form-group">
-                                          <label>Select Location</label>
-                                          <select class="search-loaction form-control">
-                                             <option label="location"></option>
-                                             <option value="0">America</option>
-                                             <option value="1">Australia</option>
-                                             <option value="2">Africa</option>
-                                             <option value="3">Pakistan</option>
-                                             <option value="4">Japan</option>
-                                             <option value="5">Srilanka</option>
-                                          </select>
-                                       </div>
+                                          <label>Alış Saati</label>
+                                         <input type="time" class="form-control search-year" style="    line-height: 20px;    padding: 14px 12px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 no-padding">
+                                       <div class="form-group">
+                                          <label>Veriş tarihi</label>
+                                          <input type="date" class="form-control search-year" style="    line-height: 20px;    padding: 14px 12px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 no-padding">
+                                       <div class="form-group">
+                                          <label>Veriş Saati</label>
+                                         <input type="time" class="form-control search-year" style="    line-height: 20px;    padding: 14px 12px;">
+                                        </div>
                                     </div>
                                  </div>
                                  <div class="form-group pull-right">
-                                    <button type="submit" value="submit" class="btn btn-lg btn-theme" >Search Now</button>
+                                    <button type="submit" value="submit" class="btn btn-lg btn-theme" >ARA</button>
                                  </div>
                               </div>
                            </form>
                         </div>
                         <div class="tab-pane fade" id="tab2" >
-                           <form>
+                       <form>
+                              <div class="search-form pull-left">
+                                 <div class="search-form-inner pull-left">
+                                    <div class="col-md-3 no-padding">
+                                       <div class="form-group">
+                                          <label>PNR</label>
+                                          <input type="text" class="form-control" placeholder="Eg PNRW3 " />
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 no-padding">
+                                       <div class="form-group">
+                                          <label>Soyisim</label>
+                                          <input type="text" class="form-control" placeholder="Eg YILMAZ" />
+                                       </div>
+                                    </div>
+                               
+                                 <div class="form-group pull-right">
+                                    <button type="submit" value="submit" class="btn btn-lg btn-theme" >ARA</button>
+                                 </div>
+                              </div>
+                           </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- =-=-=-=-=-=-= Advanced Search End =-=-=-=-=-=-= -->
+      <!-- =-=-=-=-=-=-= Main Content Area =-=-=-=-=-=-= -->
+      <div class="main-content-area clearfix">
+         <!-- =-=-=-=-=-=-= Featured Ads =-=-=-=-=-=-= -->
+         <section class="custom-padding gray" style="    padding: 10px 0 60px 0;">
+            <!-- Main Container -->
+            <div class="container">
+               <!-- Row -->
+               <div class="row">
+                  <!-- Heading Area -->
+                  <div class="heading-panel">
+                     <div class="col-xs-12 col-md-12 col-sm-12 left-side">
+                        <!-- Main Title -->
+                        <h1>Araç <span class="heading-color"> Filomuz</span></h1>
+                     </div>
+                  </div>
+                  <!-- Middle Content Box -->
+                  <div class="row grid-style-2 ">
+                     <div class="col-md-12 col-xs-12 col-sm-12">
+                        <!-- Ads Archive -->
+                       <?php foreach($car as $val){ ?>
+                        <div class="col-md-4 col-xs-12 col-sm-6">
+                           <div class="category-grid-box-1">
+                              <div class="featured-ribbon">
+                                 <span>Featured</span>
+                              </div>
+                              <div class="image">
+                                 <img alt="Carspot" src="<?=base_url()?>images/car/<?=$val->file?>" class="img-responsive">
+                                 <div class="ribbon popular"></div>
+                                 <div class="price-tag">
+                                    <div class="price"><span>$920,000</span></div>
+                                 </div>
+                              </div>
+                              <div class="short-description-1 clearfix">
+                                 <div class="category-title"> <span><a href="#"><?=$this->Car_model->get_category_single($val->category)?></a></span> </div>
+                                 <h3><a title="" href="single-page-listing.html"><?=$this->Car_model->get_make_single($val->make)?> <?=$this->Car_model->get_model_single($val->model)?> / <?=$val->carage?> </a></h3>
+                                 <p class="location">
+                                   <span style="    color: #089ed7;"><i class="fa fa-id-badge"></i>Ehliyet Yaşı <?=$val->driverlicanceage?></span>
+                                   
+                                   <span style="    color: #00579a; font-weight: 800; margin: 0 25px;"><i class="fa fa-credit-card"></i>Kredi Kartı Geçerlidir</span>
+                                </p>
+                                 <ul class="list-unstyled">
+                                    <li><a href="javascript:void(0)"><i class="flaticon-gas-station-1"></i><?=$this->Car_model->get_fuel_single($val->fuel)?></a></li>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-gearshift transmission"></i><?=$this->Car_model->get_gear_single($val->gear)?></a></li>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-engine-2"></i><?=$val->engine?> cc</a></li>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-car-2"></i><?=$this->Car_model->get_class_single($val->class)?></a></li>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-cogwheel-outline"></i>White</a></li>
+                                   <li><a href="javascript:void(0)"><i class="fa fa-user"></i> Yaş <?=$val->age?></a></li>
+                                 </ul>
+                              </div>
+                              <div class="ad-info-1">
+                                 <button class="btn btn-primary" style="    border-radius: 0;  height: 50px; width: 73.333333333333333%;"> HEMEN KİRALA </button>
+                                 <ul class="pull-right">
+                                    <li> <a href="#"><i class="flaticon-like-1"></i></a> </li>
+                                    <li> <a href="#"><i class="flaticon-message"></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- Listing Ad Grid -->
+                        </div>
+                       <?php } ?>
+                      
+                     </div>
+                  </div>
+                  <!-- Middle Content Box End -->
+               </div>
+               <!-- Row End -->
+            </div>
+            <!-- Main Container End -->
+         </section>
+         <!-- =-=-=-=-=-=-= Featured Ads End =-=-=-=-=-=-= -->
+         
+         <!-- =-=-=-=-=-=-= Services Section  =-=-=-=-=-=-= -->
+         <section class="section-padding services-center">
+            <div class="container">
+               
+               <div class="row clearfix">
+                   <form>
                               <div class="search-form">
                                 <!-- Body Type -->
                                 <div class="col-md-2 col-sm-3 col-xs-4">
@@ -147,309 +237,6 @@
                                 </div>
                               </div>
                            </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- =-=-=-=-=-=-= Advanced Search End =-=-=-=-=-=-= -->
-      <!-- =-=-=-=-=-=-= Main Content Area =-=-=-=-=-=-= -->
-      <div class="main-content-area clearfix">
-         <!-- =-=-=-=-=-=-= Featured Ads =-=-=-=-=-=-= -->
-         <section class="custom-padding gray">
-            <!-- Main Container -->
-            <div class="container">
-               <!-- Row -->
-               <div class="row">
-                  <!-- Heading Area -->
-                  <div class="heading-panel">
-                     <div class="col-xs-12 col-md-12 col-sm-12 left-side">
-                        <!-- Main Title -->
-                        <h1>Latest <span class="heading-color"> Featured</span> Ads</h1>
-                     </div>
-                  </div>
-                  <!-- Middle Content Box -->
-                  <div class="row grid-style-2 ">
-                     <div class="col-md-12 col-xs-12 col-sm-12">
-                        <!-- Ads Archive -->
-                        <div class="col-md-4 col-xs-12 col-sm-6">
-                           <div class="category-grid-box-1">
-                              <div class="featured-ribbon">
-                                 <span>Featured</span>
-                              </div>
-                              <div class="image">
-                                 <img alt="Carspot" src="<?=base_url()?>template/theme2/images/posting/2.jpg" class="img-responsive">
-                                 <div class="ribbon popular"></div>
-                                 <div class="price-tag">
-                                    <div class="price"><span>$920,000</span></div>
-                                 </div>
-                              </div>
-                              <div class="short-description-1 clearfix">
-                                 <div class="category-title"> <span><a href="#">Car & Bikes</a></span> </div>
-                                 <h3><a title="" href="single-page-listing.html">Porsche 911 Carrera 2017 </a></h3>
-                                 <p class="location"><i class="fa fa-map-marker"></i> Model Town Link Road London</p>
-                                 <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0)"><i class="flaticon-gas-station-1"></i>Diesel</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-dashboard"></i>35,000 km</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-engine-2"></i>1800 cc</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-car-2"></i>SUV</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-cogwheel-outline"></i>White</a></li>
-                                 </ul>
-                              </div>
-                              <div class="ad-info-1">
-                                 <p><i class="flaticon-calendar"></i> &nbsp;<span>5 Days ago</span> </p>
-                                 <ul class="pull-right">
-                                    <li> <a href="#"><i class="flaticon-like-1"></i></a> </li>
-                                    <li> <a href="#"><i class="flaticon-message"></i></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <!-- Listing Ad Grid -->
-                        </div>
-                        <!-- /col -->
-                        <div class="col-md-4 col-xs-12 col-sm-6">
-                           <div class="category-grid-box-1">
-                              <div class="featured-ribbon">
-                                 <span>Featured</span>
-                              </div>
-                              <div class="image">
-                                 <img alt="Carspot" src="<?=base_url()?>template/theme2/images/posting/3.jpg" class="img-responsive">
-                                 <div class="ribbon popular"></div>
-                                 <div class="price-tag">
-                                    <div class="price"><span>$117,000</span></div>
-                                 </div>
-                              </div>
-                              <div class="short-description-1 clearfix">
-                                 <div class="category-title"> <span><a href="#">Car & Bikes</a></span> </div>
-                                 <h3><a title="" href="single-page-listing.html">2014 Ford Shelby GT500 Coupe</a></h3>
-                                 <p class="location"><i class="fa fa-map-marker"></i> Model Town Link Road London</p>
-                                 <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0)"><i class="flaticon-gas-station-1"></i>Diesel</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-dashboard"></i>35,000 km</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-engine-2"></i>1800 cc</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-car-2"></i>SUV</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-cogwheel-outline"></i>White</a></li>
-                                 </ul>
-                              </div>
-                              <div class="ad-info-1">
-                                 <p><i class="flaticon-calendar"></i> &nbsp;<span>5 Days ago</span> </p>
-                                 <ul class="pull-right">
-                                    <li> <a href="#"><i class="flaticon-like-1"></i></a> </li>
-                                    <li> <a href="#"><i class="flaticon-message"></i></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <!-- Listing Ad Grid -->
-                        </div>
-                        <!-- /col -->
-                        <div class="col-md-4 col-xs-12 col-sm-6">
-                           <div class="category-grid-box-1">
-                              <div class="featured-ribbon">
-                                 <span>Featured</span>
-                              </div>
-                              <div class="image">
-                                 <img alt="Carspot" src="<?=base_url()?>template/theme2/images/posting/6.jpg" class="img-responsive">
-                                 <div class="ribbon popular"></div>
-                                 <div class="price-tag">
-                                    <div class="price"><span>$77,000</span></div>
-                                 </div>
-                              </div>
-                              <div class="short-description-1 clearfix">
-                                 <div class="category-title"> <span><a href="#">Car & Bikes</a></span> </div>
-                                 <h3><a title="" href="single-page-listing.html">McLaren F1 Sports Car</a></h3>
-                                 <p class="location"><i class="fa fa-map-marker"></i> Model Town Link Road London</p>
-                                 <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0)"><i class="flaticon-gas-station-1"></i>Diesel</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-dashboard"></i>35,000 km</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-engine-2"></i>1800 cc</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-car-2"></i>SUV</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-cogwheel-outline"></i>White</a></li>
-                                 </ul>
-                              </div>
-                              <div class="ad-info-1">
-                                 <p><i class="flaticon-calendar"></i> &nbsp;<span>5 Days ago</span> </p>
-                                 <ul class="pull-right">
-                                    <li> <a href="#"><i class="flaticon-like-1"></i></a> </li>
-                                    <li> <a href="#"><i class="flaticon-message"></i></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <!-- Listing Ad Grid -->
-                        </div>
-                        <!-- /col -->
-                        <div class="col-md-4 col-xs-12 col-sm-6">
-                           <div class="category-grid-box-1">
-                              <div class="featured-ribbon">
-                                 <span>Featured</span>
-                              </div>
-                              <div class="image">
-                                 <img alt="Carspot" src="<?=base_url()?>template/theme2/images/posting/13.jpg" class="img-responsive">
-                                 <div class="ribbon popular"></div>
-                                 <div class="price-tag">
-                                    <div class="price"><span>$50,00</span></div>
-                                 </div>
-                              </div>
-                              <div class="short-description-1 clearfix">
-                                 <div class="category-title"> <span><a href="#">Car & Bikes</a></span> </div>
-                                 <h3><a title="" href="single-page-listing.html">2017 Audi A4 quattro Premium</a></h3>
-                                 <p class="location"><i class="fa fa-map-marker"></i> Model Town Link Road London</p>
-                                 <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0)"><i class="flaticon-gas-station-1"></i>Diesel</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-dashboard"></i>35,000 km</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-engine-2"></i>1800 cc</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-car-2"></i>SUV</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-cogwheel-outline"></i>White</a></li>
-                                 </ul>
-                              </div>
-                              <div class="ad-info-1">
-                                 <p><i class="flaticon-calendar"></i> &nbsp;<span>5 Days ago</span> </p>
-                                 <ul class="pull-right">
-                                    <li> <a href="#"><i class="flaticon-like-1"></i></a> </li>
-                                    <li> <a href="#"><i class="flaticon-message"></i></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <!-- Listing Ad Grid -->
-                        </div>
-                        <!-- /col -->
-                        <div class="col-md-4 col-xs-12 col-sm-6">
-                           <div class="category-grid-box-1">
-                              <div class="featured-ribbon">
-                                 <span>Featured</span>
-                              </div>
-                              <div class="image">
-                                 <img alt="Carspot" src="<?=base_url()?>template/theme2/images/posting/14.jpg" class="img-responsive">
-                                 <div class="ribbon popular"></div>
-                                 <div class="price-tag">
-                                    <div class="price"><span>$999,000</span></div>
-                                 </div>
-                              </div>
-                              <div class="short-description-1 clearfix">
-                                 <div class="category-title"> <span><a href="#">Car & Bikes</a></span> </div>
-                                 <h3><a title="" href="single-page-listing.html">Bugatti Veyron Super Sport </a></h3>
-                                 <p class="location"><i class="fa fa-map-marker"></i> Model Town Link Road London</p>
-                                 <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0)"><i class="flaticon-gas-station-1"></i>Diesel</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-dashboard"></i>35,000 km</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-engine-2"></i>1800 cc</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-car-2"></i>SUV</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-cogwheel-outline"></i>White</a></li>
-                                 </ul>
-                              </div>
-                              <div class="ad-info-1">
-                                 <p><i class="flaticon-calendar"></i> &nbsp;<span>5 Days ago</span> </p>
-                                 <ul class="pull-right">
-                                    <li> <a href="#"><i class="flaticon-like-1"></i></a> </li>
-                                    <li> <a href="#"><i class="flaticon-message"></i></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <!-- Listing Ad Grid -->
-                        </div>
-                        <!-- /col -->
-                        <div class="col-md-4 col-xs-12 col-sm-6">
-                           <div class="category-grid-box-1">
-                              <div class="featured-ribbon">
-                                 <span>Featured</span>
-                              </div>
-                              <div class="image">
-                                 <img alt="Carspot" src="<?=base_url()?>template/theme2/images/posting/8.jpg" class="img-responsive">
-                                 <div class="ribbon popular"></div>
-                                 <div class="price-tag">
-                                    <div class="price"><span>$205,000</span></div>
-                                 </div>
-                              </div>
-                              <div class="short-description-1 clearfix">
-                                 <div class="category-title"> <span><a href="#">Car & Bikes</a></span> </div>
-                                 <h3><a title="" href="single-page-listing.html">Honda Civic 2017 Sports Edition</a></h3>
-                                 <p class="location"><i class="fa fa-map-marker"></i> Model Town Link Road London</p>
-                                 <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0)"><i class="flaticon-gas-station-1"></i>Diesel</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-dashboard"></i>35,000 km</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-engine-2"></i>1800 cc</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-car-2"></i>SUV</a></li>
-                                    <li><a href="javascript:void(0)"><i class="flaticon-cogwheel-outline"></i>White</a></li>
-                                 </ul>
-                              </div>
-                              <div class="ad-info-1">
-                                 <p><i class="flaticon-calendar"></i> &nbsp;<span>5 Days ago</span> </p>
-                                 <ul class="pull-right">
-                                    <li> <a href="#"><i class="flaticon-like-1"></i></a> </li>
-                                    <li> <a href="#"><i class="flaticon-message"></i></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <!-- Listing Ad Grid -->
-                        </div>
-                        <!-- /col -->
-                     </div>
-                  </div>
-                  <!-- Middle Content Box End -->
-               </div>
-               <!-- Row End -->
-            </div>
-            <!-- Main Container End -->
-         </section>
-         <!-- =-=-=-=-=-=-= Featured Ads End =-=-=-=-=-=-= -->
-         
-         <!-- =-=-=-=-=-=-= Services Section  =-=-=-=-=-=-= -->
-         <section class="section-padding services-center">
-            <div class="container">
-               <!-- Heading Area -->
-               <div class="heading-panel">
-                  <div class="col-xs-12 col-md-12 col-sm-12 text-center">
-                     <!-- Main Title -->
-                     <h1>Our <span class="heading-color"> Feature </span> Services</h1>
-                     <!-- Short Description -->
-                     <p class="heading-text">Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico ut debet consectetuer.</p>
-                  </div>
-               </div>
-               <div class="row clearfix">
-                  <!--Left Column-->
-                  <div class="col-md-4 col-sm-6 col-xs-12 pull-left">
-                  <!--Service Block -->
-                  <div class="services-grid">
-                        <div class="icons icon-right"><i class="flaticon-engine-4"></i></div>
-                        <h4>Engine Upgrades</h4>
-                        <p>We have the right caring, experience and dedicated professional for you.</p>
-                     </div>
-                  <!--Service Block -->
-                  <div class="services-grid">
-                        <div class="icons icon-right"><i class="flaticon-settings"></i></div>
-                        <h4>Car Inspection</h4>
-                        <p>We have the right caring, experience and dedicated professional for you.</p>
-                     </div>
-                      <!--Service Block -->
-                  
-
-                  </div>
-                  
-                  <!--Right Column-->
-                  <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
-                     <!--Service Block-->
-                     
-                       
-                     <div class="services-grid">
-                        <div class="icons icon-left"><i class="flaticon-vehicle-3"></i></div>
-                        <h4>Car Oil Change</h4>
-                        <p>We have the right caring, experience and dedicated professional for you.</p>
-                     </div>
-                     <!--Service Block-->
-                      <div class="services-grid">
-                        <div class="icons icon-left"><i class="flaticon-car-steering-wheel"></i></div>
-                        <h4>Power steering</h4>
-                        <p>We have the right caring, experience and dedicated professional for you.</p>
-                     </div>
-                      
-                  </div>
-                  <!--Image Column-->
-                  <div class="col-md-4 col-sm-12 col-xs-12">
-                     <figure class="wow zoomIn  animated" data-wow-delay="0ms" data-wow-duration="3500ms" >
-                        <img class="center-block" src="<?=base_url()?>template/theme2/images/service-car.png" alt="">
-                     </figure>
-                  </div>
                </div>
 
             </div>
@@ -458,209 +245,7 @@
          <!-- =-=-=-=-=-=-=  Services Section End =-=-=-=-=-=-= -->
          
          
-
-         <!-- =-=-=-=-=-=-= Testimonials =-=-=-=-=-=-= -->         
-         <section class="section-padding parallex bg-img-3">
-            <div class="container">
-               <div class="row">
-                  <div class="owl-testimonial-2">
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Just fabulous</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/1.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Jhon Emily Copper </h3>
-                              <p> Developer</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Awesome ! Loving It</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/2.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Hania Sheikh </h3>
-                              <p> CEO Pvt. Inc.</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                      <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Very quick and Fast</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/3.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Jaccica Albana </h3>
-                              <p>  CTO Albana Inc.</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Done in 3 Months! Awesome</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/4.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Humayun Sarfraz </h3>
-                              <p>  CTO Glixen Technologies.</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Find It Quit Professional</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/4.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Massica O'Brain </h3>
-                              <p> Audit Officer </p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Just fabulous</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/1.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Jhon Emily Copper </h3>
-                              <p> Developer</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Awesome ! Loving It</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/2.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Hania Sheikh </h3>
-                              <p> CEO Pvt. Inc.</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Very quick and Fast</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/3.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Jaccica Albana </h3>
-                              <p>  CTO Albana Inc.</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Done in 3 Months! Awesome</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/4.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Humayun Sarfraz </h3>
-                              <p>  CTO Glixen Tech.</p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Testimonial Column-->
-                     <div class="single_testimonial">
-                        <div class="textimonial-content">
-                           <h4>Find It Quit Professional</h4>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru.</p>
-                        </div>
-                        <div class="testimonial-meta-box">
-                           <img src="<?=base_url()?>template/theme2/images/users/4.jpg" alt="">
-                           <div class="testimonial-meta">
-                              <h3 class="">Massica O'Brain </h3>
-                              <p> Audit Officer </p>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- =-=-=-=-=-=-= Testimonials Section End =-=-=-=-=-=-= -->
-         
-       
+ 
          <!-- =-=-=-=-=-=-= Expert Reviews Section =-=-=-=-=-=-= -->
          <section class="news section-padding">
             <div class="container">
@@ -668,7 +253,7 @@
                   <div class="heading-panel">
                      <div class="col-xs-12 col-md-12 col-sm-12 left-side">
                         <!-- Main Title -->
-                        <h1>Expert  <span class="heading-color"> Reviews</span> Feedback</h1>
+                        <h1>Artı  <span class="heading-color"> Blog</span></h1>
                         <!-- Short Description -->
                         <p class="heading-text">Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico ut debet consectetuer.</p>
                      </div>
@@ -727,58 +312,9 @@
             </div>
          </section>
          <!-- =-=-=-=-=-=-= Expert Reviews End =-=-=-=-=-=-= -->
-         <!-- =-=-=-=-=-=-= Our Clients =-=-=-=-=-=-= -->
-         <section class="client-section gray">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-4 col-sm-12 col-xs-12">
-                     <div class="margin-top-30">
-                        <h3>Why Choose Us</h3>
-                        <h2>Our premium Clients</h2>
-                     </div>
-                  </div>
-                  <div class="col-md-8 col-sm-12 col-xs-12">
-                     <div class="brand-logo-area clients-bg">
-                        <div class="clients-list">
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/16.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/2.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/11.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/4.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/5.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/6.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/7.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/8.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/9.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                           <div class="client-logo">
-                              <a href="#"><img src="<?=base_url()?>template/theme2/images/brands/17.png" class="img-responsive" alt="Brand Image" /></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- =-=-=-=-=-=-= Our Clients End =-=-=-=-=-=-= -->
+ 
          <!-- =-=-=-=-=-=-= Car Inspection =-=-=-=-=-=-= -->
-         <section class="car-inspection section-padding">
+         <section class="car-inspection section-padding gray">
             <div class="container">
                <div class="row">
                   <div class="col-md-6 col-sm-6 col-xs-12 nopadding hidden-sm">

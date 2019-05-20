@@ -10,6 +10,18 @@ class Car_model extends CI_Model {
     {
         return $this->db->get("rentacarcar")->result();
     }
+
+    public function get_make_car($id)
+    {
+        return $this->db->where("markaid",$id)->get("marka")->row()->markaname;
+    }
+
+
+    public function get_model_car($id)
+    {
+        return $this->db->where("modelid",$id)->get("model")->row()->modelname;
+    }
+
     public function get_makes()
     {
         return $this->db->get("marka")->result();
@@ -76,5 +88,31 @@ class Car_model extends CI_Model {
     {
         $this->db->insert("car_attribute",$data);
     }
+  
+  
+     public function get_fuel_single($id)
+    {
+        return $this->db->where("id",$id)->get("rentacarfuel")->row()->fuel;
+    }
 
+      public function get_class_single($id)
+    {
+        return $this->db->where("id",$id)->get("rentacarclass")->row()->class;
+    }
+        public function get_gear_single($id)
+    {
+        return $this->db->where("id",$id)->get("rentacargear")->row()->gear;
+    }
+          public function get_category_single($id)
+    {
+        return $this->db->where("id",$id)->get("rentacarcategory")->row()->name;
+    }
+            public function get_make_single($id)
+    {
+        return $this->db->where("markaid",$id)->get("marka")->row()->markaname;
+    }
+              public function get_model_single($id)
+    {
+        return $this->db->where("modelid",$id)->get("model")->row()->modelname;
+    }
 }

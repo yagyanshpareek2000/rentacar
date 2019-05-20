@@ -20,6 +20,7 @@ class Car extends MY_Controller {
         $data["fuel"] = $this->car->get_fuel();
         $data["case"] = $this->car->get_case();
         $data["category"] = $this->car->get_category();
+        $data["period"] = $this->car->get_period();
         $this->template->load('beta/template', 'beta/car/index',$data);
     }
     public function ekstra()
@@ -133,6 +134,11 @@ class Car extends MY_Controller {
     {
         $this->car->deletecategory($id);
         redirect("Backend/Car/category");
+    }
+  
+      public function page()
+    {
+       $this->load->view("beta/car/period_modal");
     }
 
 }
