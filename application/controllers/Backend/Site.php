@@ -12,6 +12,8 @@ class Site extends MY_Controller {
 
     public function index()
     {
+       $data = array();
+       $data["site"] = $this->site->get();
        $this->template->load('beta/template', 'beta/site/index',$data);
     }
   

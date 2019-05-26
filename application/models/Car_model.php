@@ -115,4 +115,20 @@ class Car_model extends CI_Model {
     {
         return $this->db->where("modelid",$id)->get("model")->row()->modelname;
     }
+
+    public function get_car_periyot_price($periyot,$day1,$day2,$id_rentacar,$mount)
+    {
+
+               $this->db->where("day1",$day1);
+               $this->db->where("day2",$day2);
+               $this->db->where("periyot",$periyot);
+               $this->db->where("id_rentacar",$id_rentacar);
+        $query = $this->db->get("renatacar_periyot");
+        if($query->num_rows() > 0)
+        {
+           return $query->row()->$mount;
+        }else{
+            return 0;
+        }
+    }
 }

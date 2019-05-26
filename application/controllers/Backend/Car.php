@@ -135,10 +135,48 @@ class Car extends MY_Controller {
         $this->car->deletecategory($id);
         redirect("Backend/Car/category");
     }
-  
-      public function page()
+    public function page()
     {
        $this->load->view("beta/car/period_modal");
+    }
+    public function periyot_modal($id)
+    {
+        $data["id"] = $id;
+        $this->template->load('beta/template', 'beta/car/period_modal',$data);
+    }
+
+    public function periyot_add_car()
+    {
+        $data = array(
+        'day1' =>  $this->_post_return("day1"),
+        'day2' =>  $this->_post_return("day2"),
+        'periyot' =>  $this->_post_return("periyot"),
+        'ocak' => $this->_post_return("ay1"),
+        'subat' => $this->_post_return("ay2"),
+        'mart' => $this->_post_return("ay3"),
+        'nisan' => $this->_post_return("ay4"),
+        'mayis' => $this->_post_return("ay5"),
+        'haziran' => $this->_post_return("ay6"),
+        'temmuz' => $this->_post_return("ay7"),
+        'agustos' => $this->_post_return("ay8"),
+        'eylul' => $this->_post_return("ay9"),
+        'ekim' => $this->_post_return("ay10"),
+        'kasim' => $this->_post_return("ay11"),
+        'aralik' => $this->_post_return("ay12"),
+        'id_rentacar' => $this->input->post("id_rentacar"),
+    );
+        $this->db->where("id_rentacar",$this->input->post("id_rentacar"));
+        $this->db->where("periyot",$this->input->post("periyot"));
+        $query = $this->db->get("renatacar_periyot");
+        if($query->num_rows() > 0)
+        {
+            $this->db->where("id_rentacar",$this->input->post("id_rentacar"))->where("periyot",$this->input->post("periyot"))->update("renatacar_periyot",$data);
+        }else{
+            $this->db->insert("renatacar_periyot",$data);
+        }
+
+
+
     }
 
 }
